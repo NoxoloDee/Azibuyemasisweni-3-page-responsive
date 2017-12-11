@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Azibuyemasisweni Tourism Consulting Agency</title>
+    <meta charset="UTF-8">
+    <meta name="Azibuyemasisweni Tourism Consulting Agency website" content="All information about Azibuyemasisweni Tourism Consulting Agency">
+    <meta name="Azibuyemasisweni" content="HTML,CSS">
+    <meta name="Desiree Noxolo Gumede" content="Azibuyemasisweni">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media-queries.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- POLYFILLS -->
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <a href="index.html"><img src="IMAGES/logo.png" alt="Azibuyemasisweni logo" style="width:74px;height:78px;padding-left:50px;">
+            </a>
+
+            <div class="dropdown">
+                <button class="dropbtn">MENU
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                    <a href="index.html">HOME</a>
+                    <a href="about.html">ABOUT</a>
+                    <a href="gallery.html">GALLERY</a>
+                    <a href="#box">CONTACT US</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div id="box-overlay"></div>
+
+    <section class="hero-image">
+        <h1>FIGHTING UNEMPLOYMENT</h1>
+    </section>
+
+
+    <div id="to-here"></div>
+
+    <main>
+        <section class="services">
+            <a href="#to-here"="#bm">
+                <button>WHAT WE DO</button>
+            </a>
+
+            <h1 id="bm">WE DEAL WITH THE FOLLOWING:</h1>
+
+            <hr>
+
+            <p>Community Development Tourism Awareness | Tourism Seminars and Summits | Workshops for Unemployed Tourism Graduates | SMME's Tourism Development | Placement in internship positions through our Workshops</p>
+
+            <p>(not limited limited to Travel &#38 Tourism only)</p>
+
+            <div class="images1">
+                <img src="images/20.jpg">
+                <img src="images/19.jpg">
+                <img src="images/18.jpg">
+                <img src="images/27.jpg">
+            </div>
+        </section>
+
+        <section class="the-team">
+            <h1>OUR TEAM</h1>
+
+            <hr>
+
+            <p>The brains behind Azibuyemasisweni Tourism Consulting agency</p>
+
+            <div class="images2">
+                <div class="featured-image col-4 col-med-6 col-sm-12">
+                    <img src="images/Maseru.jpg">
+                    <h2>Maseru Madlala</h2>
+                    <hr>
+                    <p>Founder and MD of Azibuyemasisweni Tourism Consulting Agency</p>
+                </div>
+
+                <div class="featured-image col-4 col-med-6 col-sm-12">
+                    <img src="images/theresa.jpg">
+                    <h2>Theresa Reneicke</h2>
+                    <hr>
+                    <p>Azibuyemasisweni Tourism consulting Agency Project Manager</p>
+                </div>
+
+                <div class="featured-image col-4 col-med-6 col-sm-12">
+                    <img src="images/shameema.jpg">
+                    <h2>Shameema Lakay</h2>
+                    <hr>
+                    <p>Azibuyemasisweni Tourism consulting Agency Western Cape branch Manager</p>
+                </div>
+
+                <div class="featured-image col-4 col-med-6 col-sm-12">
+                    <img src="images/Nibia.jpg">
+                    <h2>Nibia Canovi</h2>
+                    <hr>
+                    <p>Azibuyemasisweni Tourism Consulting Agency events co-ordinator</p>
+                </div>
+
+                <div class="featured-image col-4 col-med-6 col-sm-12">
+                    <img src="images/fikile.jpg">
+                    <h2>Fikile Kalimashe</h2>
+                    <hr>
+                    <p>Azibuyemasisweni Tourism Consulting Agency Public Relations Department
+                    </p>
+                </div>
+
+
+
+
+
+            </div>
+        </section>
+
+        <div class="culture">
+            <h2>Morning Live: Maseru Madlala - CEO and founder of Azibuyemasisweni Tourism Consulting Agency on turning Culture into business</h2>
+            <hr>
+        </div>
+
+        <div class="Morninglive">
+            <div class="video-container">
+                <iframe width="853" height="480" src="https://www.youtube.com/embed/t03jigIOuIQ" frameborder="0" allowfullscreen</iframe>
+            </div>
+            </iframe>
+        </div>
+
+
+    </main>
+
+    <footer>
+
+        <div class="map">
+            <button id="map-button" onclick="myFunc()">LOCATE US ON MAP</button>
+
+            <div id="map-block" class="map-block col-sm-12">
+                <p>KZN 6 Palm building Mashona house, Suite 4A uMhlanga</p>
+                <div id="map"></div>
+            </div>
+
+            <div id="box"></div>
+        </div>
+
+        <small>Copyright &copy; 2017 | All Rights Reserved</small>
+    </footer>
+
+
+    <!-- Map -->
+
+
+    <script type="text/javascript">
+        function myFunc() {
+            var x = document.getElementById('map-block');
+            if (x.style.display == 'none') {
+                x.style.display = 'block';
+            } else {
+                x.style.display = 'none';
+            }
+        }
+    </script>
+
+
+    <!---->
+
+    <script>
+        function initMap() {
+            var uluru = {
+                lat: -29.7247624,
+                lng: 31.0674387
+            };
+            var map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 4,
+                center: uluru
+            });
+            var marker = new google.maps.Marker({
+                position: uluru,
+                map: map
+            });
+        }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDNyPaFFmkhL33WCx-VLeEVcFRcJ_2Kg2Y&callback=initMap">
+    </script>
+
+</body>
+
+</html>
